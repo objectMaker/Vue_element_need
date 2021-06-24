@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <el-container>
+      <el-header>Header</el-header>
+      <el-main>Main</el-main>
+      <el-footer>Footer</el-footer>
+    </el-container>
+    <el-tag>标签一</el-tag>
+    <el-tag type="success">标签二</el-tag>
+    <el-tag type="info">标签三</el-tag>
+    <el-tag type="warning">标签四</el-tag>
+    <el-tag type="danger">标签五</el-tag>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import {Tag} from 'element-ui'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'el-tag':Tag
   }
 }
 </script>
